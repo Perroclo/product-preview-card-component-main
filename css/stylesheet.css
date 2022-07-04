@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+:root{
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    
+    /*### Neutral*/
+    
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Cream);
+}
+
+
+.container{
+background-color: white;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto auto;
+margin-left: 20px;
+margin-right: 20px;
+border-radius: 10px 10px 10px 10px;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.zonaImagen .imagen{
+
+width: 100%;
+border-radius: 10px 10px 0px 0px;
+}
+
+.perfume{
+
+font-size: 13px;
+letter-spacing: 3px;
+margin-bottom: 14px;
+color: var(--Dark-grayish-blue);
+
+}
+
+.Titulo{
+font-family: 'Fraunces', serif;
+font-size: 30px;
+margin-bottom: 14px;
+}
+
+.description{
+
+font-size: 13px;
+font-weight:normal;
+margin-bottom: 53px;
+line-height: 22px;
+color: var(--Dark-grayish-blue);
+
+}
+
+.datos{
+
+padding: 19px;
+
+}
+
+.precio1{
+
+font-size: 33px;
+font-family: 'Fraunces', serif;
+}
+
+.precio2{
+
+font-size: 14px;
+margin-left: 20px;
+position: relative;
+bottom: 7px;
+}
+
+.carrito{
+
+    display: block;
+    height: 60px; 
+    width: 100%;   
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Dark-cyan);
+    border-radius: 12px ;
+    border-style: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.carrito:hover {
+
+background-color: green;
+color: black;
+cursor: pointer;
+
+}
+
+.precio1:hover{
+
+cursor: pointer;
+font-size: 40px;
+
+}
+
+
+
+.imagen-desktop{
+
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 500px){
+
+.container{
+
+grid-template-columns: 290px 290px;
+grid-template-rows: 488px;
+
+}
+
+.zonaImagen .imagen{
+ 
+    display: none;
+    
+    }
+
+.zonaImagen .imagen-desktop{
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.datos{
+
+padding: 31px;
+
+}
+
+
+}
